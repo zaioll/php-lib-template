@@ -24,9 +24,11 @@
     "php": "^7.4"
   },
   "require-dev": {
-    "squizlabs/php_codesniffer": "3.*",
-    "phpmd/phpmd" : "@stable",
-    "phpunit/phpunit": "^9"
+    "captainhook/captainhook": "@stable",
+    "captainhook/plugin-composer": "^5.2",
+    "phpmd/phpmd": "@stable",
+    "phpunit/phpunit": "^9",
+    "squizlabs/php_codesniffer": "3.*"
   },
   "config": {
     "sort-packages": true,
@@ -65,6 +67,7 @@
     "post-install-cmd": [
       "@composer dump-autoload"
     ],
+    "post-autoload-dump": "vendor/bin/captainhook install -f -s",
     "ci": [
       "@composer validate --no-check-all --strict",
       "@phpmd",
