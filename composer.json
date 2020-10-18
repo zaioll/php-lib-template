@@ -62,6 +62,9 @@
     }
   ],
   "scripts": {
+    "post-install-cmd": [
+      "@composer dump-autoload"
+    ],
     "ci": [
       "@composer validate --no-check-all --strict",
       "@phpmd",
