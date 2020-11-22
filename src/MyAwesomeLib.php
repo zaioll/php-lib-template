@@ -13,7 +13,7 @@ class MyAwesomeLib
     /**
      * @return bool
      */
-    public function myMethod():bool
+    public function myMethod(): bool
     {
         return true;
     }
