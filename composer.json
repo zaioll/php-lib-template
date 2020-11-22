@@ -74,8 +74,8 @@
       "@phpcs",
       "@test"
     ],
-    "phpcs": "vendor/bin/phpcs -d memory_limit=512M --standard=PSR2 src/",
+    "phpcs": "vendor/bin/phpcs --standard=phpcs.ruleset.xml",
     "test": "vendor/bin/phpunit",
-    "phpmd": "vendor/bin/phpmd src/ text codesize,cleancode,design,controversial,unusedcode,naming"
+    "phpmd": "vendor/bin/phpmd src/ text ruleset.xml"
   }
 }

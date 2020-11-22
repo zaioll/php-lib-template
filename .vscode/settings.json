@@ -1,0 +1,6 @@
+{
+    "phpcs.executablePath": "vendor/bin/phpcs",
+    "phpcs.showSources": true,
+    "phpmd.rules": "ruleset.xml",
+    "phpmd.command": "vendor/bin/phpmd"
+}
